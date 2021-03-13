@@ -16,7 +16,7 @@
 
 -module(emqx_plugin_template).
 
--include("emqx.hrl").
+%% -include("emqx.hrl").
 
 -export([ load/1
         , unload/0
