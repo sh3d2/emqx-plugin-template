@@ -87,8 +87,8 @@ on_client_connack(ConnInfo = #{clientid := ClientId}, Rc, Props, _Env) ->
     {ok, Props}.
 
 on_client_connected(ClientInfo = #{clientid := ClientId}, ConnInfo, _Env) ->
-    io:format("Client(~s) connected, ClientInfo:~n~p~n, ConnInfo:~n~p~n",
-              [ClientId, ClientInfo, ConnInfo]).
+    io:format("Client(~s) connected. Szymon to Ty? Hello world ;-)",
+              [ClientId]).
 
 on_client_disconnected(ClientInfo = #{clientid := ClientId}, ReasonCode, ConnInfo, _Env) ->
     io:format("Client(~s) disconnected due to ~p, ClientInfo:~n~p~n, ConnInfo:~n~p~n",
