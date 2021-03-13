@@ -87,7 +87,7 @@ on_client_connack(ConnInfo = #{clientid := ClientId}, Rc, Props, _Env) ->
     {ok, Props}.
 
 on_client_connected(ClientInfo = #{clientid := ClientId}, ConnInfo, _Env) ->
-    io:format("Client(~s) connected, ClientInfo:~n~p~n, ConnInfo:~n~p~n",
+    io:format("Szymon nie denerwuj sie;-) Client(~s) connected, ClientInfo:~n~p~n, ConnInfo:~n~p~n",
               [ClientId, ClientInfo, ConnInfo]).
 
 on_client_disconnected(ClientInfo = #{clientid := ClientId}, ReasonCode, ConnInfo, _Env) ->
